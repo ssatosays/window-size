@@ -7,8 +7,37 @@
     <title>ssatosays/get-windowsize-with-js</title>
   </head>
   <body>
-    <h1>ssatosays/get-windowsize-with-js</h1>
-
+    <div class="container">
+      <h1>ssatosays/get-windowsize-with-js</h1>
+      <!-- Width -->
+      <h2>1. Width</h2>
+      <hr>
+      <h3>screen.width : <span id="1-1"></span></h3>
+      <h5>モニターサイズ</h5>
+      <h3>screen.availWidth : <span id="1-2"></span></h3>
+      <h5>有効範囲</h5>
+      <!-- /Width -->
+      <!-- Height -->
+      <h2>2. Height</h2>
+      <hr>
+      <h3>screen.height : <span id="2-1"></span></h3>
+      <h5>モニターサイズ</h5>
+      <h3>screen.availHeight : <span id="2-2"></span></h3>
+      <h5>有効範囲</h5>
+      <!-- /Height -->
+    </div>
+    <script>
+      window.onload = () => {
+        // Width
+        document.getElementById("1-1").innerHTML = screen.width;
+        document.getElementById("1-2").innerHTML = screen.availWidth;
+        // -- Width
+        // Height
+        document.getElementById("2-1").innerHTML = screen.height;
+        document.getElementById("2-2").innerHTML = screen.availHeight;
+        // -- Height
+      }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   </body>
 </html>
