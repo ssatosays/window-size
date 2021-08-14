@@ -19,6 +19,6 @@ app.use(basicAuth({
   },
 }))
 
-app.use(express.static(__dirname + '/public'))
+app.use(express.static(__dirname + '/docs'))
  
 app.listen(app.get('port'), () => { console.log('Server listening on port %s', app.get('port'))})
