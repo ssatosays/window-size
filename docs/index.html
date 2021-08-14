@@ -13,17 +13,25 @@
       <h2>1. Width</h2>
       <hr>
       <h3>screen.width : <span id="1-1"></span></h3>
-      <h5>モニターサイズ</h5>
+      <h5>- モニターサイズ</h5>
       <h3>screen.availWidth : <span id="1-2"></span></h3>
-      <h5>有効範囲</h5>
+      <h5>- 有効範囲</h5>
+      <h3>window.innerWidth : <span id="1-3"></span></h3>
+      <h5>- ブラウザ内の表示域 / スクロールバー含む</h5>
+      <h3>window.outerWidth : <span id="1-4"></span></h3>
+      <h5>- ブラウザ全体</h5>
       <!-- /Width -->
       <!-- Height -->
       <h2>2. Height</h2>
       <hr>
       <h3>screen.height : <span id="2-1"></span></h3>
-      <h5>モニターサイズ</h5>
+      <h5>- モニターサイズ</h5>
       <h3>screen.availHeight : <span id="2-2"></span></h3>
-      <h5>有効範囲</h5>
+      <h5>- 有効範囲</h5>
+      <h3>window.innerHeight : <span id="2-3"></span></h3>
+      <h5>- ブラウザ内の表示域 / スクロールバー含む</h5>
+      <h3>window.outerHeight : <span id="2-4"></span></h3>
+      <h5>- ブラウザ全体</h5>
       <!-- /Height -->
     </div>
     <script>
@@ -31,10 +39,14 @@
         // Width
         document.getElementById("1-1").innerHTML = screen.width;
         document.getElementById("1-2").innerHTML = screen.availWidth;
+        document.getElementById("1-3").innerHTML = window.innerWidth;
+        document.getElementById("1-4").innerHTML = window.outerWidth;
         // -- Width
         // Height
         document.getElementById("2-1").innerHTML = screen.height;
         document.getElementById("2-2").innerHTML = screen.availHeight;
+        document.getElementById("2-3").innerHTML = window.innerHeight;
+        document.getElementById("2-4").innerHTML = window.outerHeight;
         // -- Height
       }
     </script>
