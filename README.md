@@ -1,2 +1,2 @@
-# get-windowsize-with-js
+# window-size
 Get window-size with js.
